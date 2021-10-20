@@ -52,3 +52,17 @@ function medium() {
         })
     }
 }
+function hard() {
+    const cont = document.getElementById('container');
+    cont.classList.add("hard");
+    for (let i = 1; i <= 49; i++) {
+        const Cell = document.createElement("div");
+        Cell.classList.add("gridcell");
+        cont.append(Cell);
+
+        Cell.addEventListener('click', function () {
+            this.style.backgroundColor = "skyblue";
+            // console.log('cliccato');
+        })
+    }
+}
