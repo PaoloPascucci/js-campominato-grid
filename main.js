@@ -11,10 +11,10 @@ let UserTrial = prompt('Scegli la difficoltà: Facile, Medio o Difficile?')
 if (UserTrial == "Facile") {
     easy()
 }
-else if (UserTrial = "Medio") {
+else if (UserTrial == "Medio") {
     medium()
 }
-else if (UserTrial = "Difficile") {
+else if (UserTrial == "Difficile") {
     hard()
 }
 else {
@@ -30,6 +30,7 @@ function easy() {
     for (let i = 1; i <= 100; i++) {
         const Cell = document.createElement("div");
         Cell.classList.add("gridcell");
+        Cell.innerHTML += i;
         cont.append(Cell);
 
         Cell.addEventListener('click', function () {
@@ -44,8 +45,9 @@ function medium() {
     for (let i = 1; i <= 81; i++) {
         const Cell = document.createElement("div");
         Cell.classList.add("gridcell");
-        cont.append(Cell);
 
+        cont.append(Cell);
+        Cell.innerHTML += i
         Cell.addEventListener('click', function () {
             this.style.backgroundColor = "skyblue";
             // console.log('cliccato');
@@ -59,7 +61,7 @@ function hard() {
         const Cell = document.createElement("div");
         Cell.classList.add("gridcell");
         cont.append(Cell);
-
+        Cell.innerHTML += i;
         Cell.addEventListener('click', function () {
             this.style.backgroundColor = "skyblue";
             // console.log('cliccato');

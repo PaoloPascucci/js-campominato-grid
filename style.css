@@ -3,7 +3,6 @@
     }
 
     #container {
-        height: 800px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -20,13 +19,16 @@
     }
 
     .easy {
+        height: 800px;
         margin: 3rem 27rem;
     }
 
     .medium {
+        height: 800px;
         margin: 3rem 30.2rem;
     }
 
     .hard {
-        margin: 3rem 36.6rem;
+        height: 710px;
+        margin: 3rem 37rem;
     }
