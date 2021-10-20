@@ -15,7 +15,7 @@ else if (UserTrial = "Medio") {
     medium()
 }
 else if (UserTrial = "Difficile") {
-    Hard()
+    hard()
 }
 else {
     document.getElementById('container').innerHTML = "Inserire la difficolta, grazie :)"
@@ -26,7 +26,22 @@ else {
 
 function easy() {
     const cont = document.getElementById('container');
+    cont.classList.add("easy");
     for (let i = 1; i <= 100; i++) {
+        const Cell = document.createElement("div");
+        Cell.classList.add("gridcell");
+        cont.append(Cell);
+
+        Cell.addEventListener('click', function () {
+            this.style.backgroundColor = "skyblue";
+            // console.log('cliccato');
+        })
+    }
+}
+function medium() {
+    const cont = document.getElementById('container');
+    cont.classList.add("medium");
+    for (let i = 1; i <= 81; i++) {
         const Cell = document.createElement("div");
         Cell.classList.add("gridcell");
         cont.append(Cell);

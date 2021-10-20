@@ -4,19 +4,29 @@
 
     #container {
         height: 800px;
-        min-width: 800px;
-        margin: 5rem auto;
         display: flex;
         flex-wrap: wrap;
-        background-color: grey;
     }
 
     .gridcell {
         height: 100px;
         width: 100px;
         border: 1px solid white;
+        background-color: grey;
     }
 
     .Azzurro {
         background-color: skyblue;
+    }
+
+    .easy {
+        margin: 3rem 27rem;
+    }
+
+    .medium {
+        margin: 3rem 30.2rem;
+    }
+
+    .hard {
+        margin: 3rem 36.6rem;
     }
