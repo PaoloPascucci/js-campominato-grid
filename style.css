@@ -12,6 +12,8 @@
         width: 100px;
         border: 1px solid white;
         background-color: grey;
+        line-height: 100px;
+        text-align: center;
     }
 
     .Azzurro {
@@ -25,7 +27,7 @@
 
     .medium {
         height: 800px;
-        margin: 3rem 30.2rem;
+        margin: 0rem 30.2rem;
     }
 
     .hard {
